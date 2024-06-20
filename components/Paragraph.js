@@ -8,7 +8,7 @@ const Paragraph = ({value}) =>{
         target : element,
         offset: ['start 0.9', 'start start']
     });
-    const words = value.split(" ");
+    
 
 
     return(
@@ -17,7 +17,7 @@ const Paragraph = ({value}) =>{
             ref={element}
             style={{opacity: scrollYProgress}}
 
-            >{words}
+            >{value}
             </motion.p>
         </motion.div>
     )
